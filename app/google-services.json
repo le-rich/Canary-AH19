@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "522326458919",
+    "firebase_url": "https://fleet-furnace-246619.firebaseio.com",
+    "project_id": "fleet-furnace-246619",
+    "storage_bucket": "fleet-furnace-246619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522326458919:android:0637951b47db3403",
+        "android_client_info": {
+          "package_name": "final.angelhack.canary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522326458919-mogtsmoqsoagnblj2drsfuq80d7vmtjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm8fRtrSsf-tbMo3xaZ6-P3wIksGW4rhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522326458919-mogtsmoqsoagnblj2drsfuq80d7vmtjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
