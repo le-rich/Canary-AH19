@@ -35,6 +35,10 @@ html, body {
 	height: 174px;
 }
 
+.panel-body{
+	text-align: center;
+}
+
 #map-container{
 	position: absolute;
 	top: 0;

@@ -325,4 +325,3 @@ function toggleSOS(){
     $("#sos-button").css({"background-color": "red", "color":"white"});
   }
 }
-
