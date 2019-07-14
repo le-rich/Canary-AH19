@@ -46,6 +46,19 @@ html, body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#sos-header{
+	font-size: 24pt;
+	position: absolute;
+	top: 5%;
+}
+
+#sos-header-content{
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: red;
+	border-radius: 10px;
+}
+
 #sos-button{
 
 	background-color: red;
@@ -70,6 +83,10 @@ html, body {
 #sos-button-container:hover{
 	cursor: pointer;
 	transform: scale(1.2);
+}
+
+#sos-button-container:active{
+	transform: scale(1.4)
 }
 
 #profile-btn img{
