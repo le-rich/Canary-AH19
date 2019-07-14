@@ -281,7 +281,7 @@
       });
 
 
-      var ref = firebase.database().ref("Users/");
+      var ref = firebase.database().ref("users/");
 
 ref.on("value", function(snap){
   var marker;
@@ -296,7 +296,7 @@ ref.on("value", function(snap){
   });
 });
 
-      
+
     }
 
 
@@ -308,8 +308,3 @@ ref.on("value", function(snap){
         'Error: Your browser doesn\'t support geolocation.');
       infoWindow.open(map);
     }
-
-
-
-
-

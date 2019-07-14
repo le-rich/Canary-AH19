@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-<link rel="stylesheet" href="./css/styles.css">
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
+  <title>Green Guarden: Login Screen</title>
+  <meta charset="utf-8">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Firebase Dependencies -->
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+  <script>
   var config = {
     apiKey: "AIzaSyBm8fRtrSsf-tbMo3xaZ6-P3wIksGW4rhU",
     authDomain: "fleet-furnace-246619.firebaseapp.com",
@@ -16,50 +18,74 @@
     storageBucket: "fleet-furnace-246619.appspot.com",
     messagingSenderId: "522326458919"
   };
-  firebase.initializeApp(config);
-</script>
+    firebase.initializeApp(config);
+  </script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Permanent+Marker|EB+Garamond|Montserrat" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
-<body>
-<script>
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-</script>
-<!-- The surrounding HTML is left untouched by FirebaseUI.
-     Your app may use that space for branding, controls and other customizations.-->
-	<div>
-	<h1 id="loginHeader">Canary</h1>
-	</div>
-<div id="firebaseui-auth-container"></div>
-<div id="loader">Loading...</div>
-<script>
-var uiConfig = {
-  callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      // User successfully signed in.
-      // Return type determines whether we continue the redirect automatically
-      // or whether we leave that to developer to handle.
-      return true;
-    },
-    uiShown: function() {
-      // The widget is rendered.
-      // Hide the loader.
-      document.getElementById('loader').style.display = 'none';
-    }
-  },
-  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-  signInFlow: 'popup',
-  signInSuccessUrl: 'richardIndex.html',
-  signInOptions: [
-    // Leave the lines as is for the providers you want to offer your users.
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
-  ],
-  // Terms of service url.
-  tosUrl: 'index.html',
-  // Privacy policy url.
-  privacyPolicyUrl: 'index.html'
-};
-// The start method will wait until the DOM is loaded.
-ui.start('#firebaseui-auth-container', uiConfig);
-</script>
+
+<body onload="loadDone()">
+  <div id="doneContainer" class="container-fluid">
+    <div id="doneRow" class="row text-center">
+    </div>
+  </div>
+  <div id="all">
+    <div class="background"></div>
+    <div id="overlayLoad" class="container-fluid">
+    </div>
+    <div id="allContainer" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-10 mx-auto">
+          <div id="signupContainer" class="container-fluid pt-5 pb-3 text-center">
+            <div class="row">
+              <div id="signupLabel" class="col-8 mx-auto mb-5">Create Your Account</div>
+              <div id="spinnerCol" class="col-1" hidden>
+              </div>
+            </div>
+            <form action="" id="signupForm">
+             <div class="form-group row">
+              <div id="userField" class="col-8 mx-auto my-2 formIcon">
+                <input id="userFieldInput" type="text" class="formField" placeholder="Username" name="username" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div id="emailContainer" class="col-8 mx-auto my-2 formIcon">
+                <input id="emailFieldInput" type="email" class="formField" placeholder="Email Address" name="email" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div id="pwContainer" class="col-8 mx-auto my-2 formIcon">
+                <input id="pwFieldInput" type="password" placeholder="Password" class="formField" name="password" required>
+              </div>
+            </div>
+            <div class="form-group row text-center">
+              <div class="col-10 mx-auto mt-2 mb-3 text-center">
+                <input id="doneBtn" type="button" value="SIGN UP" class="" onclick="createFirebaseAccount()">
+              </input>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-10 text-center mx-auto mt-5">
+            <a id="switchLoginLink" href="#" onclick="switchToLogin()">Already have an account? Click here to login.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/login.js"></script>
 </body>
+
 </html>
