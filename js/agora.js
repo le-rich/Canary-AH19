@@ -20,13 +20,6 @@ $(document).ready(function() {
 if(!AgoraRTC.checkSystemRequirements()) {
   alert("browser does not support webRTC");
 }
-/* select Log type */
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.NONE);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.ERROR);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.WARNING);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.DEBUG);
-/* simulated data to proof setLogLevel() */
 AgoraRTC.Logger.error('this is error');
 AgoraRTC.Logger.warning('this is warning');
 AgoraRTC.Logger.info('this is info');
