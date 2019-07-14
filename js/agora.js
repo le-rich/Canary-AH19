@@ -1,7 +1,21 @@
-$('#sos-button-container').click(function() {
+$(document).ready(function() {
+  function vibratePhone() {
   // Vibrate for 500ms
   navigator.vibrate([500]);
-})
+}
+   var socket = io.connect('http://192.168.0.194:3000');
+
+   $('#sos-button-container').on('click',function() {
+         //  var user_message = $('#sos-button').val()
+           socket.emit('send_message',{message: 'test message'});
+   });
+
+   socket.on('get_message', function(data) {
+
+       alert('Someone ded, hlp pls');
+       vibratePhone();
+       });
+   });
 
 if(!AgoraRTC.checkSystemRequirements()) {
   alert("browser does not support webRTC");
@@ -159,17 +173,3 @@ function getDevices() {
 //audioSelect.onchange = getDevices;
 //videoSelect.onchange = getDevices;
 getDevices();
-
-$(document).ready(function() {
-   var socket = io.connect('http://localhost:3000');
-
-   $('#sos-button-container').on('click',function() {
-         //  var user_message = $('#sos-button').val()
-           socket.emit('send_message',{message: 'test message'});
-   });
-
-   socket.on('get_message', function(data) {
-       $('#sos-button').append(data.message);
-       console.log('test');
-       });
-   });
