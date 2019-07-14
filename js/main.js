@@ -316,13 +316,23 @@ $("#sos-button-container").click(function(){
   toggleSOS();
 });
 
+let $icons = $('.features-icons-item');
+
 function toggleSOS(){
   if ($("#sos-button").text() == "S.O.S. REQUEST"){
     $("#sos-button").text("CANCEL");
     $("#sos-button").css({"background-color": "black", "color":"red"});
+
+    // Reveal Icons:
+    for (i = 0; i < $icons.length; i++) {
+      $icons[i].className = "features-icons-item mx-auto";
+    }
   } else{
     $("#sos-button").text("S.O.S. REQUEST");
     $("#sos-button").css({"background-color": "red", "color":"white"});
+
+    for (i = 0; i < $icons.length; i++) {
+      $icons[i].className = "features-icons-item mx-auto d-none";
+    }
   }
 }
-
