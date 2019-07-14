@@ -5,3 +5,5 @@ ref.on("value", function(snap){
     console.log(snap.val()[i].latitude);
   });
 });
+
+
