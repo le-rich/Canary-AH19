@@ -21,7 +21,19 @@
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
 
-
+  <style>
+    #sos-button{
+      margin-top:10px;
+      background-color: red;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50px;
+      color: white;
+      letter-spacing: 0.3em;
+    }
+  </style>
 	<script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -48,13 +60,28 @@
       </div>
     </nav>
 
+
+
     <!-- Masthead -->
     <header class="masthead text-white text-center">
       <div class="overlay"></div>
-
     </header>
 
-    <!-- Icons Grid -->
+
+
+    <div id="map-conatiner"></div>
+
+    <div class="container-fluid">
+  
+      <div id="sos-button-container" class="row">
+        <div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
+      </div>
+  
+    </div>
+  
+
+
+   
     <section class="features-icons bg-light text-center">
       <div class="container">
         <div class="row">
@@ -63,8 +90,7 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-screen-desktop m-auto text-primary"></i>
               </div>
-              <h3>Fully</h3>
-              <p class="lead mb-0">This theme</p>
+              <h3>Insulin</h3>
             </div>
           </div>
           <div class="col-lg-4 md-4, sm-4">
@@ -72,8 +98,7 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-layers m-auto text-primary"></i>
               </div>
-              <h3>Bootstrap</h3>
-              <p class="lead mb-0">Featurin!</p>
+              <h3>Epipen</h3>
             </div>
           </div>
           <div class="col-lg-4 md-4, sm-4">
@@ -81,8 +106,7 @@
               <div class="features-icons-icon d-flex">
                 <i class="icon-check m-auto text-primary"></i>
               </div>
-              <h3>Easy</h3>
-              <p class="lead mb-0">Ready t!</p>
+              <h3>CPR</h3>
             </div>
           </div>
         </div>
@@ -94,7 +118,7 @@
     <!--  -->
 
     <!-- Footer -->
-    <footer class="footer bg-light">
+    <!-- <footer class="footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -138,13 +162,12 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    Empty Home Page
 
 
     <!-- JQUERY -->
