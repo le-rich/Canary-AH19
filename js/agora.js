@@ -12,7 +12,7 @@ $(document).ready(function() {
 
    socket.on('get_message', function(data) {
 
-       alert('Someone ded, hlp pls');
+       alert('HELP REQUESTED IN VICINITY!');
        vibratePhone();
        });
    });
