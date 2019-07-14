@@ -291,7 +291,7 @@ ref.on("value", function(snap){
      marker = new google.maps.Marker({
         position: LatLon,
         map: map,
-        title: 'Provider'
+        title: 'Supplier'
     });
   });
 });
@@ -308,3 +308,10 @@ ref.on("value", function(snap){
         'Error: Your browser doesn\'t support geolocation.');
       infoWindow.open(map);
     }
+
+$("#sos-header").toggle();
+
+$("#sos-button-container").click(function(){
+  $("#header").fadeToggle();
+  $("#sos-header").fadeToggle();
+});
