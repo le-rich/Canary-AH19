@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+  <!-- Browser Tab Icon -->
+  <link rel="icon" href="img/canary.png">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
+  
+	<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  	apiKey: "AIzaSyAhH2zkMCHfLxRg6Lloz0o1-BJ6IS-z8nM",
+  	authDomain: "fleet-furnace-246619.firebaseapp.com",
+  	databaseURL: "https://fleet-furnace-246619.firebaseio.com",
+  	projectId: "fleet-furnace-246619",
+  	storageBucket: "",
+  	messagingSenderId: "522326458919",
+  	appId: "1:522326458919:web:463c7166deda69b8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
+        <a class="btn btn-primary" href="#">Sign In</a> 
+      </div>
+    </nav>
+
+
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+    </header>
+
+
+
+    <div id="map-conatiner"></div>
+
+   
+    <section class="features-icons bg-light text-center">
+      
+      <!-- Request SOS Button -->
+      <div class="container-fluid">
+        <div id="sos-button-container" class="row">
+          <div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-3 ml-auto">
+            <div class="features-icons-item mx-auto d-none">
+              <div class="features-icons-icon">
+                <i class="fas fa-syringe m-auto text-primary"></i>
+              </div>
+              <h3>Insulin</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="features-icons-item mx-auto d-none">
+              <div class="features-icons-icon">
+                <i class="fas fa-pen-alt m-auto text-primary"></i>
+              </div>
+              <h3>EpiPen</h3>
+            </div>
+          </div>
+          <div class="col-3 mr-auto">
+            <div class="features-icons-item mx-auto d-none">
+              <div class="features-icons-icon">
+                <i class="fas fa-heartbeat m-auto text-primary"></i>
+              </div>
+              <h3>CPR</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div id="cancel-sos-container" class="row">
+          <div id="cancel-sos-btn" class="col-5 mx-auto text-center py-4 animated fadeInUp d-none">CANCEL SOS</div>
+        </div>
+      </div>
+
+    </section>
+
+  
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center my-auto mx-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Canary 2019. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- JQUERY -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- CUSTOM -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
+</html>
