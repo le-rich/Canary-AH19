@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBm8fRtrSsf-tbMo3xaZ6-P3wIksGW4rhU",
+    authDomain: "fleet-furnace-246619.firebaseapp.com",
+    databaseURL: "https://fleet-furnace-246619.firebaseio.com",
+    projectId: "fleet-furnace-246619",
+    storageBucket: "fleet-furnace-246619.appspot.com",
+    messagingSenderId: "522326458919"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+<script>
+// Initialize the FirebaseUI Widget using Firebase.
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+</script>
+<!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+	<div>
+	<h1 id="loginHeader">Canary</h1>
+	</div>
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+<script>
+var uiConfig = {
+  callbacks: {
+    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+      // User successfully signed in.
+      // Return type determines whether we continue the redirect automatically
+      // or whether we leave that to developer to handle.
+      return true;
+    },
+    uiShown: function() {
+      // The widget is rendered.
+      // Hide the loader.
+      document.getElementById('loader').style.display = 'none';
+    }
+  },
+  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+  signInFlow: 'popup',
+  signInSuccessUrl: 'richardIndex.html',
+  signInOptions: [
+    // Leave the lines as is for the providers you want to offer your users.
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  ],
+  // Terms of service url.
+  tosUrl: 'index.html',
+  // Privacy policy url.
+  privacyPolicyUrl: 'index.html'
+};
+// The start method will wait until the DOM is loaded.
+ui.start('#firebaseui-auth-container', uiConfig);
+</script>
+</body>
+</html>
