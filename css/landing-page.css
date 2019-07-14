@@ -19,7 +19,7 @@ h6 {
 }
 
 header.masthead {
-  position: relative;
+  position: absolute;
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;

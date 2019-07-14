@@ -291,7 +291,7 @@ ref.on("value", function(snap){
      marker = new google.maps.Marker({
         position: LatLon,
         map: map,
-        title: 'Provider'
+        title: 'Supplier'
     });
   });
 });
@@ -309,6 +309,7 @@ ref.on("value", function(snap){
       infoWindow.open(map);
     }
 
+$("#sos-header").toggle();
 
     /* * * * * JQuery Button Click Functions * * * * */
 
@@ -348,3 +349,7 @@ ref.on("value", function(snap){
         $sosButton[0].className = "col-5 mx-auto text-center py-4 animated fadeInUp";
       }
     });
+$("#sos-button-container").click(function(){
+  $("#header").fadeToggle();
+  $("#sos-header").fadeToggle();
+});
