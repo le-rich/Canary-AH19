@@ -1,0 +1,215 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\4a07ce50cf67714c108630d46291db7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d304745365526f1391bc62de8c78ccdc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\929fbbb5ac2308326d794ca4261bfa6b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\a62359a42992252871a140a6dded7bb5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\98c3cd9a168494fa261f32cf37ed85e3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db31e442283286d6902f2099d0f20485\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d26bf3cf0bc7cd5f4cefe1e44e4d9773\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\7d6cfa3a3195db8761074f92d854387e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\851d436714b2db22323f36699f82c3d4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db45c8511b3a921065a45e06becb571d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\48abf531c6dbf798f05f1819d5bad137\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\bde6faa04340c680a717a5fee296640a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\17add0eb6f00742ccfd0c9d1cb892e21\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\098f157db6cc1487377cc3d379123e5a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\cf636a42cc66cd03b24aff43e5b6fe34\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b82861c5c947d03f53c18a5a39eb6afa\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\08d63feebdd8b34313ba82186fe30b5d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\786ee3d5aef1a5e34f034dfae0fe8d87\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76d9050360c6d9a6fb582fe830abd9b1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b7c754b2f892f5bcd1950499e2c0f8b3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\ffb906e56826e84458916a6a31b7a3f7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\aa4fea8f5bea91dc9ed780706cb2d0e0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\554f3bdabdc44950bdc7605fe78e6833\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76fcfad41eec1a9ce3ac52bf8e6f2686\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\f6d26a33f7d0b016f99bdf390967bbbc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\2968d9f4f23554df46d36db3a075e023\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:10:22-76
+application
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:12:5-41:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d304745365526f1391bc62de8c78ccdc\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d304745365526f1391bc62de8c78ccdc\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b82861c5c947d03f53c18a5a39eb6afa\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b82861c5c947d03f53c18a5a39eb6afa\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:18:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:28:9-30:55
+	android:value
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:30:13-52
+	android:name
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:29:13-58
+activity#com.example.canary.MapsActivity
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:32:9-40:20
+	android:label
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:33:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml:38:27-74
+uses-sdk
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\4a07ce50cf67714c108630d46291db7c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\4a07ce50cf67714c108630d46291db7c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d304745365526f1391bc62de8c78ccdc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d304745365526f1391bc62de8c78ccdc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\929fbbb5ac2308326d794ca4261bfa6b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\929fbbb5ac2308326d794ca4261bfa6b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\a62359a42992252871a140a6dded7bb5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\a62359a42992252871a140a6dded7bb5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\98c3cd9a168494fa261f32cf37ed85e3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\98c3cd9a168494fa261f32cf37ed85e3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db31e442283286d6902f2099d0f20485\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db31e442283286d6902f2099d0f20485\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d26bf3cf0bc7cd5f4cefe1e44e4d9773\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\d26bf3cf0bc7cd5f4cefe1e44e4d9773\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\7d6cfa3a3195db8761074f92d854387e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\7d6cfa3a3195db8761074f92d854387e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\851d436714b2db22323f36699f82c3d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\851d436714b2db22323f36699f82c3d4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db45c8511b3a921065a45e06becb571d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\db45c8511b3a921065a45e06becb571d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\48abf531c6dbf798f05f1819d5bad137\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\48abf531c6dbf798f05f1819d5bad137\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\bde6faa04340c680a717a5fee296640a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\bde6faa04340c680a717a5fee296640a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\17add0eb6f00742ccfd0c9d1cb892e21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\17add0eb6f00742ccfd0c9d1cb892e21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\098f157db6cc1487377cc3d379123e5a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\098f157db6cc1487377cc3d379123e5a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\cf636a42cc66cd03b24aff43e5b6fe34\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\cf636a42cc66cd03b24aff43e5b6fe34\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\93eed59f3a4a3dc897e30c2687436d1b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b82861c5c947d03f53c18a5a39eb6afa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b82861c5c947d03f53c18a5a39eb6afa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\08d63feebdd8b34313ba82186fe30b5d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\08d63feebdd8b34313ba82186fe30b5d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\786ee3d5aef1a5e34f034dfae0fe8d87\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\786ee3d5aef1a5e34f034dfae0fe8d87\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76d9050360c6d9a6fb582fe830abd9b1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76d9050360c6d9a6fb582fe830abd9b1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b7c754b2f892f5bcd1950499e2c0f8b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\b7c754b2f892f5bcd1950499e2c0f8b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\ffb906e56826e84458916a6a31b7a3f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\ffb906e56826e84458916a6a31b7a3f7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\aa4fea8f5bea91dc9ed780706cb2d0e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\aa4fea8f5bea91dc9ed780706cb2d0e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\554f3bdabdc44950bdc7605fe78e6833\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\554f3bdabdc44950bdc7605fe78e6833\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76fcfad41eec1a9ce3ac52bf8e6f2686\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\76fcfad41eec1a9ce3ac52bf8e6f2686\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\f6d26a33f7d0b016f99bdf390967bbbc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\f6d26a33f7d0b016f99bdf390967bbbc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\2968d9f4f23554df46d36db3a075e023\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\2968d9f4f23554df46d36db3a075e023\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\alexi\Desktop\Git_Repos\AngelHack\Canary-AH19\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:24:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\c110e9b4efe5b84b5c2a293931151d68\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\fe52e3a3f47bcda781fd4452ba2824da\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alexi\.gradle\caches\transforms-2\files-2.1\368bebedc3e2122eaffe8f821f88eb9f\AndroidManifest.xml:24:13-58

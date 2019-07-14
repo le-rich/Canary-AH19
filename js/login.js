@@ -39,7 +39,8 @@ function createFirebaseAccount(){
         	var promise = firebase.database().ref('users/'+user.uid).update( {
         		"name": username,
         		"latitude" : latitude,
-        		"longitude" : longitude
+        		"longitude" : longitude,
+						"distressActive" : false
         	});
 
         	$("#loginMessage").text("Welcome!");
