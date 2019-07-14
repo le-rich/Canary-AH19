@@ -43,7 +43,7 @@ function createFirebaseAccount(){
         	});
 
         	$("#loginMessage").text("Welcome!");
-          window.location.href="/";
+          window.location.href="../richardIndex.html";
     	});
 		return firebaseUser;
 	}).catch(function(error) {
@@ -82,4 +82,13 @@ firebase.auth().onAuthStateChanged(function(user){
 	if (!loginProcessing && user != null){
 		window.location.href="/";
 	}
+});
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    document.getElementById("#hello").textContent = "Logout";
+    document.getElementById("#hello").href = "/richardIndex.html";
+  } else {
+    alert("failed")
+  }
 });
