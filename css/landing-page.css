@@ -51,8 +51,6 @@ header.masthead h1 {
   }
 }
 
-img { width: 50px; }
-
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -66,6 +64,24 @@ img { width: 50px; }
   .showcase .showcase-text {
     padding: 7rem;
   }
+}
+
+
+/* * * * *  BUTTONS AND ICONS * * * * */
+
+#sos-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 0.3em;
+}
+
+#sos-button:hover {
+  cursor: pointer;
 }
 
 .features-icons {
@@ -89,25 +105,24 @@ img { width: 50px; }
   font-size: 5rem;
 }
 
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+/* Cancel SOS Request Button */
+#cancel-sos-btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: red;
+  letter-spacing: 0.3em;
 }
 
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+#cancel-sos-btn:hover {
+  cursor: pointer;
 }
 
+
+/* Footer */
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
