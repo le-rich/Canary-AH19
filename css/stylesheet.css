@@ -16,6 +16,15 @@ html, body {
 	height: 100%;
 }
 
+#video-container{
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	width: 400px;
+	height: 200px;
+	background-color: black;
+}
+
 #logo{
 	font-family: 'DM Serif Display';
 	font-size: 24pt;
