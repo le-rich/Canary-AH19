@@ -27,12 +27,17 @@
   	</script>
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<!-- ANIMATE.CSS -->
-  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	
+		<!-- Custom styles for this template -->
+		<link href="css/landing-page.css" rel="stylesheet">
+		<link href="css/landing-page.min.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" type="text/css" href="css/stylesheet.css"> -->
+		
   </head>
   <body>
   	<div id="map-container"></div>
-  	<div class="container-fluid">
+  	<!-- <div class="container-fluid">
   		<div class="row animated fadeInDown">
   			<div id="header" class="col-10 mx-auto py-2 ">
   				<div class="row mx-1">
@@ -42,13 +47,25 @@
   					<div id="logo" class="col-3 ml-auto mr-5 text-right">Canary</div>
   				</div>
   			</div>
-  		</div>
+			</div> -->
+			
+			<!-- Navigation -->
+			<nav id="header" class="navbar navbar-light bg-light static-top">
+				<div class="container">
+					<a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
+					<a class="btn btn-primary" href="login.html">Sign In</a> 
+				</div>
+			</nav>
+
+			<!-- SOS Button -->
   		<div id="sos-button-container" class="container-fluid">
   			<div class="row">
-  				<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
+  				<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">S.O.S. REQUEST</div>
   			</div>
   		</div>
-  	</div>
+		</div>
+		
+		<!-- Toggled with SOS Request Button -->
     <div id="sos-header" class="container-fluid">
       <div class="row mx-1 py-3">
         <div id="sos-header-content" class="col-6 mx-auto text-center py-4">
@@ -56,7 +73,9 @@
           <br>
           <span>0</span> SUPPLIERS ON THEIR WAY
         </div>
-      </div>
+			</div>
+			
+			<!-- Agora video calling -->
       <div id="video-container">
       <div id="div_device" class="panel panel-default">
         <div class="select">
