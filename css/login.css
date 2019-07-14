@@ -1,0 +1,145 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-family: "Nunito Sans";
+}
+
+body{
+	background-color: #f2f6fc;
+}
+
+
+@keyframes exitAll{
+	0% {transform: scale(1) translateY(0);}
+	50% {transform: scale(0.7) translateY(0);}
+	100% {transform: scale(0.7) translateY(-10000px);}
+}
+
+
+button{
+	background: none;
+	border: none;
+}
+
+input:focus{
+	outline: none;
+}
+
+.background{
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("img/mainsplash.jpg");
+	background-size: cover;
+}
+
+
+#overlayLoad{
+	background-color: #161616;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#overlayInner{
+	color: white;
+	font-family: 'Permanent Marker';
+	font-size: 36pt;
+	margin-top: 22%;
+}
+
+#title{
+	font-family: 'Permanent Marker';
+	font-size: 104pt;
+	color: white;
+}
+
+#allContainer{
+	display: none;
+	visibility: hidden;
+}
+
+#signupContainer{
+	border-radius: 0px;
+	background-color: rgb(255,255,255, 1);
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
+}
+
+#signupForm{
+	opacity: 1.0;
+}
+
+#signupLabel{
+	font-size: 18pt;
+	font-weight: 900;
+}
+
+#doneBtn{
+	background: none;
+	border: none;
+	font-size: 16pt;
+	font-weight: bolder;
+	color: white;
+	background-color: black;
+	border-radius: 50px;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	letter-spacing: 0.05em;
+	background: #45B649;  /* fallback for old browsers */
+}
+
+#doneContainer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	font-size: 80pt;
+	font-family: 'Montserrat' !important;
+	color: black;
+}
+
+#doneRow{
+	margin-top: 20%;
+}
+
+.formField{
+	border: none;
+	border-bottom: 3px solid black;
+	background: transparent;
+	padding-bottom: 1em;
+	font-family: 'Nunito Sans';
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.formIcon{
+	position: relative;
+}
+
+.formIcon:before{
+    content: "\f007";
+    font-family: 'Font Awesome 5 Free';
+    left:20px;
+    position:absolute;
+    top:0;
+ }
+
+ #emailContainer:before{
+ 	content: "\f0e0";
+ }
+
+ #pwContainer:before{
+ 	content: "\f023";
+ }
