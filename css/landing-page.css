@@ -3,9 +3,14 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
-
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: black;
+	overflow: hidden;
 }
 
 h1,
@@ -14,74 +19,93 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
-header.masthead {
-  position: absolute;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.navbar {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-header.masthead .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+.select {
+	display: none;
 }
-
-header.masthead h1 {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
-
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
-}
-
 
 /* * * * *  BUTTONS AND ICONS * * * * */
 
+#sos-header {
+	font-size: 24pt;
+	position: absolute;
+	top: 5%;
+}
+
+#sos-header-content {
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: red;
+	border-radius: 10px;
+}
+
 #sos-button {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   background-color: red;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   color: white;
   letter-spacing: 0.3em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
 }
 
-#sos-button:hover {
-  cursor: pointer;
+#sos-button-container{
+	position: absolute;
+	bottom: 5%;
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	width: 100%;
+}
+
+#sos-button-container:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+#sos-button-container:active{
+	transform: scale(1.4)
+}
+
+#profile-btn img{
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+}
+
+#profile-btn:hover img{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#profile-btn:active img{
+	transform:scale(1.3);
+}
+
+
+/* * * ICONS * * */
+
+.features-icons-item {
+	border-radius: 10px;
+	background-color: rgba(250,245,235, 0.75);
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	font-size: 25pt;
+}
+
+.features-icons-item:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+#drug-container {
+	position: absolute;
+	bottom: 15%;
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	width: 100%;
 }
 
 .features-icons {
@@ -103,22 +127,6 @@ header.masthead h1 {
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
   font-size: 5rem;
-}
-
-/* Cancel SOS Request Button */
-#cancel-sos-btn {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  color: red;
-  letter-spacing: 0.3em;
-}
-
-#cancel-sos-btn:hover {
-  cursor: pointer;
 }
 
 

@@ -1,13 +1,25 @@
+$(document).ready(function() {
+  function vibratePhone() {
+  // Vibrate for 500ms
+  navigator.vibrate([500]);
+}
+   var socket = io.connect('http://192.168.0.194:3000');
+
+   $('#sos-button-container').on('click',function() {
+         //  var user_message = $('#sos-button').val()
+           socket.emit('send_message',{message: 'test message'});
+   });
+
+   socket.on('get_message', function(data) {
+
+       alert('Someone ded, hlp pls');
+       vibratePhone();
+       });
+   });
+
 if(!AgoraRTC.checkSystemRequirements()) {
   alert("browser does not support webRTC");
 }
-/* select Log type */
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.NONE);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.ERROR);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.WARNING);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);
-// AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.DEBUG);
-/* simulated data to proof setLogLevel() */
 AgoraRTC.Logger.error('this is error');
 AgoraRTC.Logger.warning('this is warning');
 AgoraRTC.Logger.info('this is info');

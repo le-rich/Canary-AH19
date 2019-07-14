@@ -292,6 +292,13 @@ ref.on("value", function(snap){
         map: map,
         title: 'Supplier'
     });
+    marker.addListener("click", function() {
+      var responders = document.getElementById("responderNumber");
+      var number = responders.innerHTML;
+      number++;
+      responders.innerHTML = number;
+    });
+    //googleMap.setOnMarkerClickListener(this);
   });
 });
 
@@ -307,8 +314,15 @@ ref.on("value", function(snap){
         'Error: Your browser doesn\'t support geolocation.');
       infoWindow.open(map);
     }
-
 $("#sos-header").toggle();
+
+    /* * * * * JQuery Button Click Functions * * * * */
+
+    let $sosButton = $("#sos-button");
+    let $icons = $('.features-icons-item');
+    let $cancelButton = $("#cancel-sos-btn");
+    let iconDisplayNone = true;
+    let sosDisplayNone = false;
 
 $("#sos-button-container").click(function(){
   $("#header").fadeToggle();
@@ -317,11 +331,24 @@ $("#sos-button-container").click(function(){
 });
 
 function toggleSOS(){
-  if ($("#sos-button").text() == "SOS REQUEST"){
+  if ($("#sos-button").text() == "S.O.S. REQUEST"){
     $("#sos-button").text("CANCEL");
     $("#sos-button").css({"background-color": "black", "color":"red"});
+
+    // Reveal Icons:
+    for (i = 0; i < $icons.length; i++) {
+      $icons[i].className = "features-icons-item mx-auto";
+    }
   } else{
-    $("#sos-button").text("SOS REQUEST");
+    $("#sos-button").text("S.O.S. REQUEST");
     $("#sos-button").css({"background-color": "red", "color":"white"});
+
+    for (i = 0; i < $icons.length; i++) {
+      $icons[i].className = "features-icons-item mx-auto d-none";
+    }
   }
 }
+
+$(".med-option").click(function(){
+  $(this).toggleClass("active");
+});

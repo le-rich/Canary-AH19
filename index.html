@@ -1,157 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Canary</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	<title>Canary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/landing-page.css" rel="stylesheet">
-  <link href="css/landing-page.min.css" rel="stylesheet">
-
-  <!-- Browser Tab Icon -->
-  <link rel="icon" href="img/canary.png">
-
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
-  
+	<!-- FIREBASE -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
 	<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-  	apiKey: "AIzaSyAhH2zkMCHfLxRg6Lloz0o1-BJ6IS-z8nM",
-  	authDomain: "fleet-furnace-246619.firebaseapp.com",
-  	databaseURL: "https://fleet-furnace-246619.firebaseio.com",
-  	projectId: "fleet-furnace-246619",
-  	storageBucket: "",
-  	messagingSenderId: "522326458919",
-  	appId: "1:522326458919:web:463c7166deda69b8"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  </script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+  			apiKey: "AIzaSyAhH2zkMCHfLxRg6Lloz0o1-BJ6IS-z8nM",
+  			authDomain: "fleet-furnace-246619.firebaseapp.com",
+  			databaseURL: "https://fleet-furnace-246619.firebaseio.com",
+  			projectId: "fleet-furnace-246619",
+  			storageBucket: "",
+  			messagingSenderId: "522326458919",
+  			appId: "1:522326458919:web:463c7166deda69b8"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  	</script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<!-- ANIMATE.CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	
+		<!-- Custom styles for this template -->
+		<link href="css/landing-page.css" rel="stylesheet">
+		<link href="css/landing-page.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		
   </head>
-
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
-        <a class="btn btn-primary" href="#">Sign In</a> 
+  	<div id="map-container"></div>
+  	<div class="container-fluid">		
+			<!-- Navigation -->
+			<nav id="header" class="navbar navbar-light bg-light static-top">
+					<a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
+					<span>Jane Doe</span>
+			</nav>
+			<div class="container-fluid" id="drug-container">
+					<div class="row">
+							<div class="col-3 ml-auto text-center">
+								<div class="med-option features-icons-item mx-auto d-none">
+									<div class="features-icons-icon">
+										<i class="fas fa-syringe m-auto text-primary"></i>
+									</div>
+									<h3>Insulin</h3>
+								</div>
+							</div>
+							<div class="col-3 text-center">
+								<div class="med-option features-icons-item mx-auto d-none">
+									<div class="features-icons-icon">
+										<i class="fas fa-pen-alt m-auto text-primary"></i>
+									</div>
+									<h3>EpiPen</h3>
+								</div>
+							</div>
+							<div class="col-3 mr-auto text-center">
+								<div class="med-option features-icons-item mx-auto d-none">
+									<div class="features-icons-icon">
+										<i class="fas fa-heartbeat m-auto text-primary"></i>
+									</div>
+									<h3>CPR</h3>
+								</div>
+							</div>
+						</div>
       </div>
-    </nav>
 
-
-
-    <!-- Masthead -->
-    <header class="masthead text-white text-center">
-      <div class="overlay"></div>
-    </header>
-
-
-
-    <div id="map-conatiner"></div>
-
-   
-    <section class="features-icons bg-light text-center">
-      
-      <!-- Request SOS Button -->
-      <div class="container-fluid">
-        <div id="sos-button-container" class="row">
-          <div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">S.O.S. REQUEST</div>
+			<!-- SOS Button -->
+  		<div id="sos-button-container" class="container-fluid">
+  			<div class="row">
+  				<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">S.O.S. REQUEST</div>
+  			</div>
+  		</div>
+		</div>
+		
+		<!-- Toggled with SOS Request Button -->
+    <div id="sos-header" class="container-fluid">
+      <div class="row mx-1 py-3">
+        <div id="sos-header-content" class="col-6 mx-auto text-center py-4">
+          <b>DELIVERY REQUEST ACTIVE</b>
+          <br>
+          <span id ="responderNumber">0</span> SUPPLIERS ON THEIR WAY
         </div>
       </div>
-
-      <div class="container-fluid">
-        
-        <div class="row">
-          <div class="col-3 ml-auto">
-            <div class="features-icons-item mx-auto d-none">
-              <div class="features-icons-icon">
-                <i class="fas fa-syringe m-auto text-primary"></i>
-              </div>
-              <h3>Insulin</h3>
+      <div class="row">
+        <div id="video-container" class="mx-auto col-12">
+          <div id="div_device" class="panel panel-default">
+            <div class="select">
+              <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+            </div>
+            <div class="select">
+              <label for="videoSource">Video source: </label><select id="videoSource"></select>
             </div>
           </div>
-          <div class="col-3">
-            <div class="features-icons-item mx-auto d-none">
-              <div class="features-icons-icon">
-                <i class="fas fa-pen-alt m-auto text-primary"></i>
-              </div>
-              <h3>EpiPen</h3>
-            </div>
-          </div>
-          <div class="col-3 mr-auto">
-            <div class="features-icons-item mx-auto d-none">
-              <div class="features-icons-icon">
-                <i class="fas fa-heartbeat m-auto text-primary"></i>
-              </div>
-              <h3>CPR</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+			   
 
-      <div class="container-fluid">
-        <div id="cancel-sos-container" class="row">
-          <div id="cancel-sos-btn" class="col-5 mx-auto text-center py-4 animated fadeInUp d-none">CANCEL S.O.S.</div>
-        </div>
-      </div>
 
-    </section>
+          <div id="div_join" class="panel panel-default mx-auto">
+            <div class="panel-body">
+          <!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+            Channel: <input id="channel" type="text" value="test" size="4"></input-->
+            <!--Host: <input id="video" type="checkbox" checked></input>-->
+            <button id="join" class="btn btn-warning video-button" onclick="join()">Call A Pro</button>
+            <button id="leave" class="btn btn-warning video-button" onclick="leave()">Leave Call</button>
+          <!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+          <button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+          <button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+          <button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
 
-  
-
-    <!-- Footer -->
-    <footer class="footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 h-100 text-center my-auto mx-auto">
-            <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Canary 2019. All Rights Reserved.</p>
           </div>
         </div>
+        <div class="video__main">
+        </div>
+        <div class="video__list">
+          <div class="video__item"></div>
+          <div id="video" class="video__item">
+            <div id="agora_local"></div>
+          </div>
+        </div>
+        <div id="video" style="margin:0 auto;">
+          <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- JQUERY -->
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<!-- BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- CUSTOM -->
+		<script src="js/AgoraRTCSDK-2.8.0.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/agora.js"></script>
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZmapuJ_GNdzk_nObdpnjPFmGVTEIoRmM&callback=initMap"></script>
+    <script src="http://192.168.0.194:3000/socket.io/socket.io.js"></script>
 
-
-
-    <!-- JQUERY -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <!-- CUSTOM -->
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
-
+</body>
 </html>

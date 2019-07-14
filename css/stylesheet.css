@@ -8,6 +8,10 @@ html, body {
 	overflow: hidden;
 }
 
+#canary-span{
+	font-family: 'DM Serif Display' !important; 
+}
+
 .video__main{
 	z-index: 10000;
 	width: 50px;
@@ -39,6 +43,10 @@ html, body {
 	text-align: center;
 }
 
+#video-container{
+	height: 10px;
+}
+
 #map-container{
 	position: absolute;
 	top: 0;
@@ -51,9 +59,8 @@ html, body {
 	display: none;
 }
 
-#video-container{
-	width: 400px;
-	height: 50px;
+.active{
+	background-color: #ffc107 !important;
 }
 
 #logo{
@@ -62,11 +69,8 @@ html, body {
 	color: black;
 }
 
-#header{
-	font-size: 18pt;
+#header {
 	background-color: white;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
