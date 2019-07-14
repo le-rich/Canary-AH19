@@ -9,7 +9,6 @@ var client, localStream, camera, microphone;
 var audioSelect = document.querySelector('select#audioSource');
 var videoSelect = document.querySelector('select#videoSource');
 function join() {
-  document.getElementById("join").disabled = true;
   //document.getElementById("video").disabled = true;
   var channel_key = null;
   console.log("Init AgoraRTC client with vendor key: 92afa639ebf14125bd05ff372b092a33");
@@ -94,7 +93,6 @@ function join() {
   });
 }
 function leave() {
-  document.getElementById("leave").disabled = true;
   client.leave(function () {
     console.log("Leavel channel successfully");
   }, function (err) {
