@@ -8,7 +8,7 @@ html, body {
 	overflow: hidden;
 }
 
-.video__main{|
+.video__main{
 	z-index: 10000;
 	width: 50px;
 	height: 50px;
@@ -22,6 +22,9 @@ html, body {
 }
 
 .video__list{
+	padding: 15px;
+	position: absolute;
+	left: 0;
 	width:50px; 
 	height:50px; 
 	float:left;
@@ -30,7 +33,6 @@ html, body {
 .video__item{
 	width: 200px;
 	height: 174px;
-	background:url(/img/icon_live.png) center center no-repeat;
 }
 
 #map-container{
@@ -46,10 +48,7 @@ html, body {
 }
 
 #video-container{
-	position: absolute;
-	left: 0;
-	top: 25%;
-	width: 150px;
+	width: 400px;
 	height: 50px;
 }
 

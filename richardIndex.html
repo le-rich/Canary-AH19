@@ -57,43 +57,45 @@
           <span>0</span> SUPPLIERS ON THEIR WAY
         </div>
       </div>
-      <div id="video-container">
-      <div id="div_device" class="panel panel-default">
-        <div class="select">
-          <label for="audioSource">Audio source: </label><select id="audioSource"></select>
-        </div>
-        <div class="select">
-          <label for="videoSource">Video source: </label><select id="videoSource"></select>
-        </div>
-      </div>
+      <div class="row text-center">
+        <div id="video-container" class="mx-auto col-12">
+          <div id="div_device" class="panel panel-default">
+            <div class="select">
+              <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+            </div>
+            <div class="select">
+              <label for="videoSource">Video source: </label><select id="videoSource"></select>
+            </div>
+          </div>
 
-      <div id="div_join" class="panel panel-default">
-        <div class="panel-body">
-        <!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
-        Channel: <input id="channel" type="text" value="test" size="4"></input-->
-        <!--Host: <input id="video" type="checkbox" checked></input>-->
-        <button id="join" class="btn btn-primary" onclick="join()">Call</button>
-        <button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
-        <!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
-        <button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
-        <button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
-        <button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
+          <div id="div_join" class="panel panel-default">
+            <div class="panel-body">
+          <!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+            Channel: <input id="channel" type="text" value="test" size="4"></input-->
+            <!--Host: <input id="video" type="checkbox" checked></input>-->
+            <button id="join" class="btn btn-warning" onclick="join()">Call A Pro</button>
+            <button id="leave" class="btn btn-warning" onclick="leave()">Leave Call</button>
+          <!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+          <button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+          <button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+          <button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
 
+          </div>
         </div>
-      </div>
-      <div class="video__main">
-      </div>
-      <div class="video__list">
+        <div class="video__main">
+        </div>
+        <div class="video__list">
           <div class="video__item"></div>
           <div id="video" class="video__item">
-              <div id="agora_local"></div>
+            <div id="agora_local"></div>
           </div>
-      </div>
-      <div id="video" style="margin:0 auto;">
+        </div>
+        <div id="video" style="margin:0 auto;">
           <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+        </div>
       </div>
     </div>
-    </div>
+  </div>
 
 		<!-- JQUERY -->
 		<script
