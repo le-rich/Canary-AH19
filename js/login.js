@@ -43,13 +43,7 @@ function createFirebaseAccount(){
         	});
 
         	$("#loginMessage").text("Welcome!");
-
-        	//When the databate update is done, then go to main.html
-        	promise.then(function() {
-        		$("#all").toggleClass("animated fadeOutUp faster").on("webkitAnimationEnd oAnimationEnd msAnimationEnd animationend", function(e) {
-					window.location.href="/";
-				});
-        	});
+          window.location.href="/";
     	});
 		return firebaseUser;
 	}).catch(function(error) {
@@ -67,11 +61,7 @@ function loginFirebaseAccount(){
 	loginProcessing = true;
 	firebase.auth().signInWithEmailAndPassword(email, pass).then(function(firebaseUser){
 		firebase.auth().onAuthStateChanged(function(user){
-			$("#all").toggleClass("animated fadeOutUp faster").on("webkitAnimationEnd oAnimationEnd msAnimationEnd animationend", function(e) {
-				$("#loginMessage").text("Welcome Back!");
-				window.location.href = "/";
-			});
-
+      window.location.href = "/";
 		});
 	}).catch(function(error) {
 		alert(error);
