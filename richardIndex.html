@@ -37,6 +37,65 @@
   </head>
   <body>
   	<div id="map-container"></div>
+
+  	<div id="video-container">
+		<div id="div_device" class="panel panel-default">
+<div class="select">
+<label for="audioSource">Audio source: </label><select id="audioSource" style="width:100px;"></select>
+</div>
+<div class="select">
+<label for="videoSource">Video source: </label><select id="videoSource"></select>
+</div>
+</div>
+
+<div id="div_join" class="panel panel-default">
+<div class="panel-body">
+<!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+Channel: <input id="channel" type="text" value="test" size="4"></input-->
+<!--Host: <input id="video" type="checkbox" checked></input>-->
+<button id="join" class="btn btn-primary" onclick="join()">Call</button>
+<button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
+<!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+<button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+<button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+<button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
+
+</div>
+
+</div>
+
+    <style>
+    .video__box{width:910px; margin:0 auto; overflow:hidden;}
+    .video__main{ width:50px; height:50px;float:left }
+    .video__list{ width:50px; height:50px; float:left;}
+    .video__item{ width:200px; height:174px; hei background:url(/img/icon_live.png) center center no-repeat; }
+    </style>
+    <div class="video__main">
+    </div>
+    <div class="video__list">
+        <div class="video__item"></div>
+        <div id="video" class="video__item">
+            <div id="agora_local"></div>
+        </div>
+    </div>
+
+<div id="video" style="margin:0 auto;">
+    <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+</div>
+		</div>
+  	<div class="container-fluid">
+  		<div class="row animated fadeInDown">
+  			<div id="header" class="col-10 mx-auto py-2 ">
+  				<div class="row mx-1">
+  					<div id="profile-btn" class="col-3 my-auto">
+  						<img src="css/img/profile.png" height="36pt" width="auto">
+  					</div>
+  					<div id="logo" class="col-3 ml-auto mr-5 text-right">Canary</div>
+  				</div>
+  			</div>
+
+  		</div>
+
 			
 			<!-- Navigation -->
 			<nav id="header" class="navbar navbar-light bg-light static-top">
@@ -45,6 +104,7 @@
 					<a id="hello" class="btn btn-primary" href="login.html">Sign In</a> 
 				</div>
 			</nav>
+
 
 			<!-- SOS Button -->
   		<div id="sos-button-container" class="container-fluid">
@@ -118,5 +178,7 @@
 	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZmapuJ_GNdzk_nObdpnjPFmGVTEIoRmM&callback=initMap">
 
 </script>
+<script src="http://192.168.0.194:3000/socket.io/socket.io.js"></script>
+
 </body>
 </html>
