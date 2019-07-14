@@ -8,6 +8,10 @@ html, body {
 	overflow: hidden;
 }
 
+.video__main{|
+	z-index: 10000;
+}
+
 #map-container{
 	position: absolute;
 	top: 0;
@@ -16,13 +20,16 @@ html, body {
 	height: 100%;
 }
 
+.select {
+	display: none;
+}
+
 #video-container{
 	position: absolute;
-	left: 25%;
+	left: 0;
 	top: 25%;
-	width: 400px;
-	height: 200px;
-	background-color: black;
+	width: 100%;
+	height: 700px;
 }
 
 #logo{
@@ -40,8 +47,7 @@ html, body {
 }
 
 #sos-button{
-	position: absolute;
-	bottom: 5%;
+
 	background-color: red;
 	left: 0;
 	right: 0;
@@ -54,9 +60,16 @@ html, body {
 	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
 }
 
-#sos-button:hover{
+#sos-button-container{
+	position: absolute;
+	bottom: 5%;
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	width: 100%;
+}
+
+#sos-button-container:hover{
 	cursor: pointer;
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 #profile-btn img{
