@@ -29,6 +29,51 @@
   <body>
   	<!-- <iframe id="map-conatiner" width="100%" height="100%" src="https://maps.google.com/maps?q=London&hl=en&sll=37.0625,-95.677068&sspn=46.677964,93.076172&t=h&hnear=London,+United+Kingdom&z=10&output=embed"></iframe> -->
   	<div id="map-container"></div>
+  	<div id="video-container">
+		<div id="div_device" class="panel panel-default">
+<div class="select">
+<label for="audioSource">Audio source: </label><select id="audioSource"></select>
+</div>
+<div class="select">
+<label for="videoSource">Video source: </label><select id="videoSource"></select>
+</div>
+</div>
+
+<div id="div_join" class="panel panel-default">
+<div class="panel-body">
+<!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+Channel: <input id="channel" type="text" value="test" size="4"></input-->
+<!--Host: <input id="video" type="checkbox" checked></input>-->
+<button id="join" class="btn btn-primary" onclick="join()">Call</button>
+<button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
+<!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+<button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+<button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+<button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
+
+</div>
+
+</div>
+
+    <style>
+    .video__box{width:910px; margin:0 auto; overflow:hidden;}
+    .video__main{ width:50px; height:50px;float:left }
+    .video__list{ width:50px; height:50px; float:left;}
+    .video__item{ width:200px; height:174px; hei background:url(/img/icon_live.png) center center no-repeat; }
+    </style>
+    <div class="video__main">
+    </div>
+    <div class="video__list">
+        <div class="video__item"></div>
+        <div id="video" class="video__item">
+            <div id="agora_local"></div>
+        </div>
+    </div>
+
+<div id="video" style="margin:0 auto;">
+    <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+</div>
+		</div>
   	<div class="container-fluid">
   		<div class="row animated fadeInDown">
   			<div id="header" class="col-10 mx-auto py-2 ">
@@ -43,11 +88,7 @@
   			<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
   		</div>
   	</div>
-		<!--Agora buttons and stream canvas, move these divs where you need them. -->
-		<div id = "me"></div>
-		<div id = "remote-container" class="col-5 mx-auto text-center py-4 animated fadeInUp"></div>
-		<div id = "canvas-container"></div>
-		<!-- -->
+
 
 
 		<!-- JQUERY -->
@@ -62,7 +103,7 @@
 		<script src="js/AgoraRTCSDK-2.8.0.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script src="js/agora.js"></script>
-  	<script>
+  	<!--<script>
   		function initMap() {
   			infoWindow = new google.maps.InfoWindow;
   			var pos = {lat: 47.6064, lng: -122.3313};
@@ -353,9 +394,11 @@
 				'Error: Your browser doesn\'t support geolocation.');
 			infoWindow.open(map);
 		}
-	</script>
+	</script> -->
+	<script type="text/javascript" src="js/main.js"></script>
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZmapuJ_GNdzk_nObdpnjPFmGVTEIoRmM&callback=initMap">
+
 </script>
 </body>
 </html>
