@@ -31,27 +31,27 @@
   	<div id="map-container"></div>
   	<div id="video-container">
 		<div id="div_device" class="panel panel-default">
-<div class="select">
-<label for="audioSource">Audio source: </label><select id="audioSource"></select>
-</div>
-<div class="select">
-<label for="videoSource">Video source: </label><select id="videoSource"></select>
-</div>
-</div>
+      <div class="select">
+        <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+      </div>
+      <div class="select">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+      </div>
+    </div>
 
-<div id="div_join" class="panel panel-default">
-<div class="panel-body">
-<!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
-Channel: <input id="channel" type="text" value="test" size="4"></input-->
-<!--Host: <input id="video" type="checkbox" checked></input>-->
-<button id="join" class="btn btn-primary" onclick="join()">Call</button>
-<button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
-<!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
-<button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
-<button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
-<button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
+    <div id="div_join" class="panel panel-default">
+      <div class="panel-body">
+      <!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+      Channel: <input id="channel" type="text" value="test" size="4"></input-->
+      <!--Host: <input id="video" type="checkbox" checked></input>-->
+      <button id="join" class="btn btn-primary" onclick="join()">Call</button>
+      <button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
+      <!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+      <button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+      <button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+      <button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
 
-</div>
+      </div>
 
 </div>
 
@@ -89,7 +89,7 @@ Channel: <input id="channel" type="text" value="test" size="4"></input-->
 
   		<div id="sos-button-container" class="container-fluid">
   			<div class="row">
-  				<div id="sos-button" class="col-md-4 col-sm-8 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
+  				<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
   			</div>
   		</div>
   	</div>
@@ -98,6 +98,8 @@ Channel: <input id="channel" type="text" value="test" size="4"></input-->
   				<div class="row mx-1 py-3">
   					<div id="sos-header-content" class="col-6 mx-auto text-center py-4">
   						<b>DELIVERY REQUEST ACTIVE</b>
+  						<br>
+  						<span>0</span> SUPPLIERS ON THEIR WAY
   					</div>
   				</div>
   			</div>
