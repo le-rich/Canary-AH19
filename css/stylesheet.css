@@ -1,0 +1,131 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'DM Sans';
+	background-color: black;
+	overflow: hidden;
+}
+
+#canary-span{
+	font-family: 'DM Serif Display' !important; 
+}
+
+.video__main{
+	z-index: 10000;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.video__box{
+	width: 910px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.video__list{
+	padding: 15px;
+	position: absolute;
+	left: 0;
+	width:50px; 
+	height:50px; 
+	float:left;
+}
+
+.video__item{
+	width: 200px;
+	height: 174px;
+}
+
+.panel-body{
+	text-align: center;
+}
+
+#video-container{
+	height: 10px;
+}
+
+#map-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.select {
+	display: none;
+}
+
+.active{
+	background-color: #ffc107 !important;
+}
+
+#logo{
+	font-family: 'DM Serif Display';
+	font-size: 24pt;
+	color: black;
+}
+
+#header {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sos-header{
+	font-size: 24pt;
+	position: absolute;
+	top: 5%;
+}
+
+#sos-header-content{
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: red;
+	border-radius: 10px;
+}
+
+#sos-button{
+
+	background-color: red;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	color: white;
+	letter-spacing: 0.3em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+}
+
+#sos-button-container{
+	position: absolute;
+	bottom: 5%;
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	width: 100%;
+}
+
+#sos-button-container:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+#sos-button-container:active{
+	transform: scale(1.4)
+}
+
+#profile-btn img{
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+}
+
+#profile-btn:hover img{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#profile-btn:active img{
+	transform:scale(1.3);
+}
