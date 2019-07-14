@@ -47,8 +47,7 @@ html, body {
 }
 
 #sos-button{
-	position: absolute;
-	bottom: 5%;
+
 	background-color: red;
 	left: 0;
 	right: 0;
@@ -58,4 +57,30 @@ html, body {
 	color: white;
 	letter-spacing: 0.3em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+}
+
+#sos-button-container{
+	position: absolute;
+	bottom: 5%;
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+	width: 100%;
+}
+
+#sos-button-container:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+#profile-btn img{
+	transition: all 0.5s cubic-bezier(.11,.81,0,1.01);
+}
+
+#profile-btn:hover img{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#profile-btn:active img{
+	transform:scale(1.3);
 }
