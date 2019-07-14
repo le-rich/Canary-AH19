@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<!-- FIREBASE -->
 	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
 	<script>
@@ -23,12 +27,17 @@
   	</script>
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<!-- ANIMATE.CSS -->
-  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	
+		<!-- Custom styles for this template -->
+		<link href="css/landing-page.css" rel="stylesheet">
+		<link href="css/landing-page.min.css" rel="stylesheet">
+
+		
   </head>
   <body>
-  	<!-- <iframe id="map-conatiner" width="100%" height="100%" src="https://maps.google.com/maps?q=London&hl=en&sll=37.0625,-95.677068&sspn=46.677964,93.076172&t=h&hnear=London,+United+Kingdom&z=10&output=embed"></iframe> -->
   	<div id="map-container"></div>
+
   	<div id="video-container">
 		<div id="div_device" class="panel panel-default">
 <div class="select">
@@ -87,20 +96,72 @@ Channel: <input id="channel" type="text" value="test" size="4"></input-->
 
   		</div>
 
+			
+			<!-- Navigation -->
+			<nav id="header" class="navbar navbar-light bg-light static-top">
+				<div class="container">
+					<a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
+					<a id="hello" class="btn btn-primary" href="login.html">Sign In</a> 
+				</div>
+			</nav>
+
+
+			<!-- SOS Button -->
   		<div id="sos-button-container" class="container-fluid">
   			<div class="row">
-  				<div id="sos-button" class="col-md-4 col-sm-8 mx-auto text-center py-4 animated fadeInUp">SOS REQUEST</div>
+  				<div id="sos-button" class="col-5 mx-auto text-center py-4 animated fadeInUp">S.O.S. REQUEST</div>
   			</div>
   		</div>
-  	</div>
+		</div>
+		
+		<!-- Toggled with SOS Request Button -->
+    <div id="sos-header" class="container-fluid">
+      <div class="row mx-1 py-3">
+        <div id="sos-header-content" class="col-6 mx-auto text-center py-4">
+          <b>DELIVERY REQUEST ACTIVE</b>
+          <br>
+          <span>0</span> SUPPLIERS ON THEIR WAY
+        </div>
+			</div>
+			
+			<!-- Agora video calling -->
+      <div id="video-container">
+      <div id="div_device" class="panel panel-default">
+        <div class="select">
+          <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+        </div>
+        <div class="select">
+          <label for="videoSource">Video source: </label><select id="videoSource"></select>
+        </div>
+      </div>
 
-  	  		<div id="sos-header" class="container-fluid">
-  				<div class="row mx-1 py-3">
-  					<div id="sos-header-content" class="col-6 mx-auto text-center py-4">
-  						<b>DELIVERY REQUEST ACTIVE</b>
-  					</div>
-  				</div>
-  			</div>
+      <div id="div_join" class="panel panel-default">
+        <div class="panel-body">
+        <!--App ID: <input id="key" type="text" placeholder="Enter App ID" value="" size="36"></input>
+        Channel: <input id="channel" type="text" value="test" size="4"></input-->
+        <!--Host: <input id="video" type="checkbox" checked></input>-->
+        <button id="join" class="btn btn-primary" onclick="join()">Call</button>
+        <button id="leave" class="btn btn-primary" onclick="leave()">Leave</button>
+        <!--button id="muteAudio" class="btn btn-primary" onclick="muteAudio()">Mute</button>
+        <button id="unmuteAudio" class="btn btn-primary" onclick="unmuteAudio()">Unmute</button>
+        <button id="enableVideo" class="btn btn-primary" onclick="enableVideo()">Enable Video</button>
+        <button id="disableVideo" class="btn btn-primary" onclick="disableVideo()">Disable Video</button-->
+
+        </div>
+      </div>
+      <div class="video__main">
+      </div>
+      <div class="video__list">
+          <div class="video__item"></div>
+          <div id="video" class="video__item">
+              <div id="agora_local"></div>
+          </div>
+      </div>
+      <div id="video" style="margin:0 auto;">
+          <div id="agora_local" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+      </div>
+    </div>
+    </div>
 
 		<!-- JQUERY -->
 		<script
@@ -114,8 +175,7 @@ Channel: <input id="channel" type="text" value="test" size="4"></input-->
 		<script src="js/AgoraRTCSDK-2.8.0.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script src="js/agora.js"></script>
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZmapuJ_GNdzk_nObdpnjPFmGVTEIoRmM&callback=initMap">
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZmapuJ_GNdzk_nObdpnjPFmGVTEIoRmM&callback=initMap">
 
 </script>
 <script src="http://192.168.0.194:3000/socket.io/socket.io.js"></script>

@@ -14,6 +14,9 @@ const port = 8080;
 app.get('/', function (req, res){
 	res.sendFile(__dirname + '\\richardIndex.html');
 });
+app.get('/login.html', function (req, res){
+	res.sendFile(__dirname + '\\login.html');
+});
 
 io.sockets.on('connection', function(socket) {
     socket.on('send_message', function(data) {

@@ -286,7 +286,6 @@
 ref.on("value", function(snap){
   var marker;
   $.each(snap.val(), function(i, n){
-    console.log(snap.val()[i].latitude);
     var LatLon = {lat: snap.val()[i].latitude, lng: snap.val()[i].longitude};
      marker = new google.maps.Marker({
         position: LatLon,
@@ -296,7 +295,7 @@ ref.on("value", function(snap){
   });
 });
 
-      
+
     }
 
 
@@ -314,4 +313,16 @@ $("#sos-header").toggle();
 $("#sos-button-container").click(function(){
   $("#header").fadeToggle();
   $("#sos-header").fadeToggle();
+  toggleSOS();
 });
+
+function toggleSOS(){
+  if ($("#sos-button").text() == "S.O.S. REQUEST"){
+    $("#sos-button").text("CANCEL");
+    $("#sos-button").css({"background-color": "black", "color":"red"});
+  } else{
+    $("#sos-button").text("S.O.S. REQUEST");
+    $("#sos-button").css({"background-color": "red", "color":"white"});
+  }
+}
+
