@@ -292,6 +292,13 @@ ref.on("value", function(snap){
         map: map,
         title: 'Supplier'
     });
+    marker.addListener("click", function() {
+      var responders = document.getElementById("responderNumber");
+      var number = responders.innerHTML;
+      number++;
+      responders.innerHTML = number;
+    });
+    //googleMap.setOnMarkerClickListener(this);
   });
 });
 
