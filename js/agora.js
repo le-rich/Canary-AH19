@@ -57,12 +57,12 @@ client.init('92afa639ebf14125bd05ff372b092a33', ()=>console.log("client initiali
 client.join(null,"agora-demo", null, (uid)=>{
   let localStream = AgoraRTC.createStream({
     streamID:uid,
-    audio:true,
+    audio:false,
     video:true,
     screen: false
   });
   localStream.init(function() {
-    localStream.play('myFeed');
+    localStream.play('me');
     client.publish(localStream.handleFail);
 
     client.on('stream-added', function (evt) {
