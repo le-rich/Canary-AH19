@@ -23,13 +23,14 @@
 
   <style>
     #sos-button{
-      margin-top:10px;
+      margin-top: 7rem;
+      margin-bottom: 7rem;
       background-color: red;
-      left: 0;
-      right: 0;
+      /* left: 0;
+      right: 0; */
       margin-left: auto;
       margin-right: auto;
-      border-radius: 50px;
+      border-radius: 10px;
       color: white;
       letter-spacing: 0.3em;
     }
@@ -55,7 +56,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-        <a class="navbar-brand" href="#"># put image here</a>
+        <a class="navbar-brand" href="#"><img id="canary-logo" src="img/canary.png" alt="canary-logo">Canary</a>
         <a class="btn btn-primary" href="#">Sign In</a>
       </div>
     </nav>
@@ -83,28 +84,29 @@
 
    
     <section class="features-icons bg-light text-center">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 md-4, sm-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
+          <div class="col-3 ml-auto">
+            <div class="features-icons-item mx-auto">
+              <div class="features-icons-icon">
+                <i class="fas fa-syringe m-auto text-primary"></i>
+                <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
               </div>
               <h3>Insulin</h3>
             </div>
           </div>
-          <div class="col-lg-4 md-4, sm-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
+          <div class="col-3">
+            <div class="features-icons-item mx-auto">
+              <div class="features-icons-icon">
+                <i class="fas fa-pen-alt m-auto text-primary"></i>
               </div>
-              <h3>Epipen</h3>
+              <h3>EpiPen</h3>
             </div>
           </div>
-          <div class="col-lg-4 md-4, sm-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
+          <div class="col-3 mr-auto">
+            <div class="features-icons-item mx-auto">
+              <div class="features-icons-icon">
+                <i class="fas fa-heartbeat m-auto text-primary"></i>
               </div>
               <h3>CPR</h3>
             </div>
@@ -115,10 +117,8 @@
 
   
 
-    <!--  -->
-
     <!-- Footer -->
-    <!-- <footer class="footer bg-light">
+    <footer class="footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -139,7 +139,7 @@
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Canary 2019. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
@@ -162,7 +162,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
