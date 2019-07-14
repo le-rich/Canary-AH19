@@ -1,3 +1,8 @@
+$('#sos-button-container').click(function() {
+  // Vibrate for 500ms
+  navigator.vibrate([500]);
+})
+
 if(!AgoraRTC.checkSystemRequirements()) {
   alert("browser does not support webRTC");
 }
@@ -154,3 +159,17 @@ function getDevices() {
 //audioSelect.onchange = getDevices;
 //videoSelect.onchange = getDevices;
 getDevices();
+
+$(document).ready(function() {
+   var socket = io.connect('http://localhost:3000');
+
+   $('#sos-button-container').on('click',function() {
+         //  var user_message = $('#sos-button').val()
+           socket.emit('send_message',{message: 'test message'});
+   });
+
+   socket.on('get_message', function(data) {
+       $('#sos-button').append(data.message);
+       console.log('test');
+       });
+   });
