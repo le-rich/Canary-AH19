@@ -361,11 +361,11 @@ $("#sos-button-container").click(function(){
 });
 
 function toggleSOS(){
-  if ($("#sos-button").text() == "SOS REQUEST"){
+  if ($("#sos-button").text() == "S.O.S. REQUEST"){
     $("#sos-button").text("CANCEL");
     $("#sos-button").css({"background-color": "black", "color":"red"});
   } else{
-    $("#sos-button").text("SOS REQUEST");
+    $("#sos-button").text("S.O.S. REQUEST");
     $("#sos-button").css({"background-color": "red", "color":"white"});
   }
 }
